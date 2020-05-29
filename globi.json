@@ -3,6 +3,6 @@
   "citation": "Katja Schulz. 2020. Collection of refuted species associations claims provided by Enclyclopedia of Life.",
   "resources": {
     "_comment" : "enable redirect by changing right hand side to some url (e.g., https://example.org/interactions.tsv)",
-    "/interactions.tsv": "/interactions.tsv" 
+    "/interactions.tsv": "https://editors.eol.org/eol_php_code/applications/content_server/resources/interactions.tsv" 
   }
 }
