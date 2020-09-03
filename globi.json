@@ -1,8 +1,186 @@
-{ 
-  "_comment": "Sample GloBI dataset descriptor. See https://globalbioticinteractions.org/contribute for more information.",
-  "citation": "Katja Schulz. 2020. Collection of refuted species associations claims provided by Enclyclopedia of Life.",
-  "resources": {
-    "_comment" : "enable redirect by changing right hand side to some url (e.g., https://example.org/interactions.tsv)",
-    "/interactions.tsv": "https://editors.eol.org/eol_php_code/applications/content_server/resources/interactions.tsv" 
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "url" : "https://editors.eol.org/eol_php_code/applications/content_server/resources/interactions.tsv",
+  "dcterms:bibliographicCitation" : "Katja Schulz. 2020. Collection of refuted species associations claims provided by Enclyclopedia of Life.",
+  "delimiter" : "\t",
+  "headerRowCount" : 1,
+  "null" : [ "" ],
+  "tableSchema" : {
+    "columns" : [ {
+      "name" : "identifier",
+      "titles" : "identifier",
+      "datatype" : "string"
+    }, {
+      "name" : "argumentTypeId",
+      "titles" : "argumentTypeId",
+      "datatype" : "string"
+    }, {
+      "name" : "argumentTypeName",
+      "titles" : "argumentTypeName",
+      "datatype" : "string"
+    }, {
+      "name" : "referenceUrl",
+      "titles" : "argumentReasonID",
+      "datatype" : "string"
+    }, {
+      "name" : "referenceCitation",
+      "titles" : "argumentReasonName",
+      "datatype" : "string"
+    }, {
+      "name" : "interactionTypeId",
+      "titles" : "interactionTypeId",
+      "datatype" : "string"
+    }, {
+      "name" : "interactionTypeName",
+      "titles" : "interactionTypeName",
+      "datatype" : "string"
+    }, {
+      "name" : "sourceCitation",
+      "titles" : "sourceCitation",
+      "datatype" : "string"
+    }, {
+      "name" : "sourceArchiveURI",
+      "titles" : "sourceArchiveURI",
+      "datatype" : "string"
+    }, {
+      "name" : "sourceTaxonId",
+      "titles" : "sourceTaxonId",
+      "datatype" : "string"
+    }, {
+      "name" : "sourceTaxonName",
+      "titles" : "sourceTaxonName",
+      "datatype" : "string"
+    }, {
+      "name" : "sourceTaxonRank",
+      "titles" : "sourceTaxonRank",
+      "datatype" : "string"
+    }, {
+      "name" : "sourceTaxonKingdomName",
+      "titles" : "sourceTaxonKingdomName",
+      "datatype" : "string"
+    }, {
+      "name" : "targetTaxonId",
+      "titles" : "targetTaxonId",
+      "datatype" : "string"
+    }, {
+      "name" : "targetTaxonName",
+      "titles" : "targetTaxonName",
+      "datatype" : "string"
+    }, {
+      "name" : "targetTaxonRank",
+      "titles" : "targetTaxonRank",
+      "datatype" : "string"
+    }, {
+      "name" : "targetTaxonKingdomName",
+      "titles" : "targetTaxonKingdomName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:associationID",
+      "titles" : "refuted:associationID",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:interactionTypeId",
+      "titles" : "refuted:interactionTypeId",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:referenceCitation",
+      "titles" : "refuted:referenceCitation",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:referenceDoi",
+      "titles" : "refuted:referenceDoi",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:referenceUrl",
+      "titles" : "refuted:referenceUrl",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceCitation",
+      "titles" : "refuted:sourceCitation",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceOccurrenceId",
+      "titles" : "refuted:sourceOccurrenceId",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonId",
+      "titles" : "refuted:sourceTaxonId",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonName",
+      "titles" : "refuted:sourceTaxonName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonRank",
+      "titles" : "refuted:sourceTaxonRank",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonGenusName",
+      "titles" : "refuted:sourceTaxonGenusName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonFamilyName",
+      "titles" : "refuted:sourceTaxonFamilyName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonOrderName",
+      "titles" : "refuted:sourceTaxonOrderName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonClassName",
+      "titles" : "refuted:sourceTaxonClassName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonPhylumName",
+      "titles" : "refuted:sourceTaxonPhylumName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:sourceTaxonKingdomName",
+      "titles" : "refuted:sourceTaxonKingdomName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetOccurrenceId",
+      "titles" : "refuted:targetOccurrenceId",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonId",
+      "titles" : "refuted:targetTaxonId",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonName",
+      "titles" : "refuted:targetTaxonName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonRank",
+      "titles" : "refuted:targetTaxonRank",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonGenusName",
+      "titles" : "refuted:targetTaxonGenusName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonFamilyName",
+      "titles" : "refuted:targetTaxonFamilyName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonOrderName",
+      "titles" : "refuted:targetTaxonOrderName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonClassName",
+      "titles" : "refuted:targetTaxonClassName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonPhylumName",
+      "titles" : "refuted:targetTaxonPhylumName",
+      "datatype" : "string"
+    }, {
+      "name" : "refuted:targetTaxonKingdomName",
+      "titles" : "refuted:targetTaxonKingdomName",
+      "datatype" : "string"
+    } ]
   }
 }
