@@ -4,7 +4,7 @@
   } ],
   "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
   "url" : "https://editors.eol.org/eol_php_code/applications/content_server/resources/interactions.tsv",
-  "dcterms:bibliographicCitation" : "Katja Schulz. 2020. Collection of refuted species associations claims provided by Enclyclopedia of Life.",
+  "dcterms:bibliographicCitation" : "Katja Schulz. 2020. Collection of refuted species associations claims provided by Encyclopedia of Life.",
   "delimiter" : "\t",
   "headerRowCount" : 1,
   "null" : [ "" ],
